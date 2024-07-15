@@ -1,4 +1,3 @@
-export {};
 /*
 
 import add from "./index.js"; // function with default export and import
@@ -16,4 +15,12 @@ console.log(favColor);
 import { myBio as bio } from "./index.js"; // object with direct export and import (using as keyword to declare new name of variable and then will be console with new name)
 console.log(bio);
 
-*/ 
+*/
+import inquirer from "inquirer";
+import chalk from "chalk";
+let answer = await inquirer.prompt({
+    name: "name",
+    type: "input",
+    message: chalk.green("what is your name? "),
+});
+console.log(`Hello! ${answer.name}`);

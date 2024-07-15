@@ -16,3 +16,14 @@ import { myBio as bio } from "./index.js"; // object with direct export and impo
 console.log(bio);
 
 */
+
+
+import inquirer from "inquirer";
+import chalk from "chalk";
+
+let answer = await inquirer.prompt ({
+    name:"name",
+    type:"input",
+    message:chalk.green("what is your name? "),
+});
+console.log(`Hello! ${answer.name}`);

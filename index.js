@@ -1,4 +1,3 @@
-export {};
 /*
 
 export default add    // (export = to make module ) (default = to make module default if its important) (add = name of function or any variable)
@@ -19,3 +18,4 @@ export let myBio = {  // (Direct export with code)
 };
 
 */
+export {};
